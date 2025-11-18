@@ -1,0 +1,26 @@
+name: Expo Web Build & Deploy
+on:
+  push:
+    branches: [ "main" ]
+permissions:
+  contents: write
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install expo-cli
+        run: npm install --global expo-cli
+      - name: Install deps
+        run: npm ci
+      - name: Build web
+        run: npm run build:web
+      - name: Upload to GitHub Pages
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: web-build
+      - name: Deploy
+        uses: actions/deploy-pages@v2
