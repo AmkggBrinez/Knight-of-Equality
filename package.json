@@ -1,0 +1,38 @@
+{
+  "name": "knight-of-equality",
+  "version": "0.1.0",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build:web": "expo build:web",
+    "electron:dev": "electron .",
+    "electron:pack": "electron-builder"
+  },
+  "dependencies": {
+    "expo": "~48.0.0",
+    "expo-av": "~13.0.0",
+    "expo-asset": "~8.0.0",
+    "expo-file-system": "~15.0.0",
+    "expo-sqlite": "~11.0.0",
+    "@react-native-async-storage/async-storage": "^1.17.11",
+    "react": "18.0.0",
+    "react-native": "0.71.0",
+    "react-native-gesture-handler": "^2.9.0",
+    "react-native-reanimated": "^2.12.0",
+    "react-native-safe-area-context": "^4.5.0",
+    "react-native-screens": "^3.20.0",
+    "react-native-game-engine": "^1.2.0",
+    "expo-status-bar": "~1.4.0"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.6.0"
+  },
+  "build": {
+    "appId": "com.example.knightofequality"
+  }
+}

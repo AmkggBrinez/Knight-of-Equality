@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Knight of Equality",
+    "slug": "knight-of-equality",
+    "version": "1.0.0",
+    "orientation": "landscape",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
